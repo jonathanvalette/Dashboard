@@ -1,253 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Resume Developers</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
 
-	<meta name="description" content="Portefolio">
-	<meta name="author" content="Jonathan valette">   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
 
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
-    
-</head> 
+</head>
 
-<body>
-    <header class="header text-center">	    
-		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jonathan Valette</a></h1>
-			
-			<nav class="navbar navbar-expand-lg navbar-dark" >
-								
-				<div id="navigation" class="collapse navbar-collapse flex-column" >
-					<div class="profile-section pt-3 pt-lg-0">
+<body class="bg-gray-800">
+
+ <!--Nav-->
+ <nav class="bg-gray-800 pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0" >
+
+    <div class="flex flex-wrap items-center">
+        <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white bg-gray-800">
+            <a href="#">
+                <span class="text-xl pl-2">Dashboard</span>
+
+            </a>
+            <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white bg-gray-800" style="margin-left:20px;">
+              <img src="assets/images/unnamed.jpg" style="max-height:50px;" >
+              
+          </div>
+        </div>
+
+
+    </div>
+
+</nav>
+
+
+
+    <div class="flex flex-col md:flex-row" style="margin-top:30px;">
+
+        <div class="bg-gray-800 shadow-xl h-16 fixed bottom-0 mt-12 md:relative md:h-screen z-10 w-full md:w-48">
+
+            <div class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between">
+                <ul class="list-reset flex flex-row md:flex-col py-0 md:py-3 px-1 md:px-2 text-center md:text-left">
+                    
+					<li class="mr-3 flex-1" style="margin-top:15px;">
+                        <a href="index.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-purple-500">
+                            <i class="fa fa-envelope pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">Status</span>
+                        </a>
+                    </li>
 					
-						<img class="profile-image mb-3 rounded-circle mx-auto"  src="assets/images/unnamed.jpg" alt="image" >			
-						
-						<div class="bio mb-3">Je suis un Web Développeur specialisé dans le language PHP et le Framework Symfony(5.2).</div><!--//bio-->
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="https://github.com/jonathanvalette"><i class="fab fa-github-alt fa-fw"></i></a></li>
-						</ul><!--//social-list-->
-						<hr> 
-					</div><!--//profile-section-->
 					
-					<ul class="navbar-nav flex-column text-left">
-						<li class="nav-item">
-							<a class="nav-link" href="#profil"><i class="fas fa-user fa-fw mr-2"></i>Profil</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#porte"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="assets/images/cvjonathanvalette.pdf"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a>
-						</li>
-					</ul>
-				
-				</div>
-			</nav>
-		</div><!--//force-overflow-->
-	</header>
-	<div class="main-wrapper">
-		
-		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
-			<div class="container">
-				<div class="profile-teaser media flex-column flex-lg-row">
-					
-					<div class="media-body">
-						<h2 class="name font-weight-bold mb-1">Jonathan Valette</h2>
-						<div class="tagline mb-3">Web Développeur Junior</div>
-						<div class="bio mb-4">Je suis un Web Développeur specialisé dans le language PHP et le Framework Symfony(5.2). Je suis à la recherche d'un emploi de Web Développeur Junior. Voir mon <a href="assets/images/cvjonathanvalette.pdf">CV en ligne </a>.
-						</div><!--//bio-->
-						<div class="mb-4">
-							<a class="btn btn-primary mr-2 mb-3" href="assets/images/cvjonathanvalette.pdf" download="cvjonathanvalette.pdf"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline"></span> Télécharger CV</a>
-                            <a class="btn btn-secondary mb-3" href="assets/images/cvjonathanvalette.pdf"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span> Voir CV</a>
+					<li class="mr-3 flex-1" style="margin-top:15px;">
+                        <a href="task.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                            <i class="fas fa-tasks pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block" >Task to rework</span>
+                        </a>
+                    </li>
+                    <li class="mr-3 flex-1" style="margin-top:15px;">
+                        <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-purple-500">
+                            <i class="fa fa-envelope pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">Project in progress</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+
+            <div class="bg-gray-800 pt-3 text-center">
+                <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+                    <h3 class="font-bold pl-2">Status</h3>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-green-200 to-green-100 border-b-4 border-green-600 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-green-600"><i class="fa fa-wallet fa-2x fa-inverse"></i></div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">mettez-en-place-votre-environnement-front-end
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-green-500">100 %
+										<span class="text-green-500"></h2>
+                            </div>
                         </div>
-					</div><!--//media-body-->
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/unnamed.jpg" alt="image" >	
-				</div>
-			</div>
-		</section><!--//about-me-section-->
-		
-		<section id="profil" class="overview-section p-3 p-lg-5">
-			<div class="container">
-				<h2 class="section-title font-weight-bold mb-3">Profil</h2>
-				<div class="section-intro mb-5">J'ai 1 an d'expèrience dans le Web Développement en tant qu'intègrateur web (Frontend) et Développeur d'applications Web (Backend).Voici une liste des technologies et/ou language que j'utilise.</div>
-				<div class="row">
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-php"></i></div>
-							<h3 class="item-title">PHP</h3>
-							<div class="item-desc">Le PHP, pour Hypertext Preprocessor, désigne un langage informatique, utilisé principalement pour la conception de sites web dynamiques. Il s'agit d'un langage de programmation sous licence libre qui peut donc être utilisé par n'importe qui de façon totalement gratuite.  </div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-js-square"></i></div>
-							<h3 class="item-title">JavaScript, Jquery</h3>
-							<div class="item-desc">JavaScript désigne un langage de développement informatique, et plus précisément un langage de script orienté objet. On le retrouve principalement dans les pages Internet. Il permet, entre autres, d'introduire sur une page web ou HTML des petites animations ou des effets.</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-html5 mr-2"></i><i class="fab fa-css3-alt"></i></div>
-							<h3 class="item-title">HTML &amp; CSS</h3>
-							<div class="item-desc">Langage de balisage utilisé pour la création de pages web, permettant notamment de définir des liens hypertextes.  </div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-sass mr-2"></i></div>
-							<h3 class="item-title">Sass</h3>
-							<div class="item-desc">Sass est un préprocesseur CSS. C'est un langage de description compilé en CSS.</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-php"></i></div>
-							<h3 class="item-title">Framework Symfony</h3>
-							<div class="item-desc">Symfony est un framework qui représente un ensemble de composants (aussi appelés librairies) PHP autonomes qui peuvent être utilisés dans des projets web privé ou open source.</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-node-js"></i></div>
-							<h3 class="item-title">Node.js</h3>
-							<div class="item-desc">Node.js sert à faire du Javascript server side, et peut être utilisé dans des applications de bases de données, la plus populaire étant MySQL.</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa fa-database"></i></div>
-							<h3 class="item-title">Mysql &amp; Postgress &amp; Sqlite etc..</h3>
-							<div class="item-desc">Applications de bases de données</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-github"></i></div>
-							<h3 class="item-title">Github</h3>
-							<div class="item-desc">Outils de Versionning </div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-				</div><!--//row-->
-			</div><!--//container-->
-		</section>
-	
-		<div class="container"><hr></div>
-		
-		<section id="porte" class="featured-section p-3 p-lg-5">
-			<div class="container">
-				<h2 class="section-title font-weight-bold mb-5">Portefolio</h2>
-				<div class="row">
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img  src="assets/images/pkd.jpg" class="card-img" alt="image">
-								</div>
-							<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Web Application MyPKD</a></h5>
-										<p class="card-text">Une application pour mettre en contact des avocat pour des procédure standard et/ou courante. Toujours en développement.</p>
-										<p class="card-text"><small class="text-muted">Client: Pkd world</small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="http://pkdworld.com/fr/ferme-pour-travaux/">
-										<i class="fas fa-eye mr-2"></i>Voir Site (Work in progress)
-									</a>
-								</div>
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="https://static.wixstatic.com/media/d0b4e8_922b2cd7a1ae44d784e4ee109db1a8fb~mv2.png/v1/crop/x_0,y_0,w_4032,h_2340/fill/w_1228,h_713,al_c,q_90,usm_0.66_1.00_0.01/toutes%20boites.webp" class="card-img" alt="image">
-								</div>
-								<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a href="https://www.lesboitesdecomm.com/" class="theme-link">Site web Boite de comm</a></h5>
-										<p class="card-text">Un site web proposant des jeux de société.</p>
-										<p class="card-text"><small class="text-muted">Client: Boite de comm</small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://www.lesboitesdecomm.com/">
-										<i class="fas fa-eye mr-2"></i>Voir site
-									</a>
-								</div>
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-				</div><!--//row-->
-				
-			</div><!--//container-->
-		</section><!--//featured-section-->
-
-		<div class="container"><hr></div>
-		
-	    <section id="contact" class="cta-section theme-bg-light py-5">
-		    <div class="container text-center single-col-max-width">
-			    <h2 class="heading">Contact</h2>
-			    <div class="intro">
-			    <p>Vous pouvez me contacter par E-mail au : contactjonathanvalette@gmail.com</p>
-			    <ul class="list-inline mb-0">
-				 <li class="list-inline-item"><a href="https://github.com/jonathanvalette"><i class="fab fa-github-alt fa-fw"></i></a></li>
-		            <li class="list-inline-item mb-3"> <p>Merci de votre visite</p></li>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-pink-600"><i class="fas fa-users fa-2x fa-inverse"></i></div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">apprenez-a-creer-votre-site-web-avec-html5-et-css3
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-red-500">93 %
+										<span class="text-green-500"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-yellow-200 to-yellow-100 border-b-4 border-yellow-600 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-yellow-600"><i class="fas fa-user-plus fa-2x fa-inverse"></i></div>
+                            </div>
+							<div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">concevez-votre-site-web-avec-php-et-mysql
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-green-500" style="margin-top:15px;">100 %
+										<span class="text-green-500"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-blue-600"><i class="fas fa-server fa-2x fa-inverse"></i></div>
+                            </div>
+							<div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">comprendre-le-web
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-red-500" style="margin-top:15px;">96 %
+										<span class="text-green-500"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-indigo-200 to-indigo-100 border-b-4 border-indigo-500 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-indigo-600"><i class="fas fa-tasks fa-2x fa-inverse"></i></div>
+                            </div>
+							<div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">administrez-vos-bases-de-donnees-avec-mysql
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-red-500">91 %
+										<span class="text-green-500"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                    <!--Metric Card-->
+                    <div class="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5" style="min-height:250px;">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-red-600"><i class="fas fa-inbox fa-2x fa-inverse"></i></div>
+                            </div>
+							<div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-600">Developement</h5>
+                                <h3 class="font-bold text-3xl">apprenez-a-programmer-avec-javascript
+								<span class="text-green-500"></h3>
+								<h2 class="font-bold text-3xl text-red-500" style="margin-top:15px;">86 %
+										<span class="text-green-500"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+            </div>
 
 
-		        
-	                
-	            </ul><!--//social-list-->
-			    
-			</div><!--//container-->
-	    </section>
 
-	</div><!--//main-wrapper-->
+        </div>
+    </div>
 
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+
 </body>
-</html> 
 
+</html>
